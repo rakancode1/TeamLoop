@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+*{
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+    background: oklab(100% 0 -0.00011);
+    user-select: none;
+    
+}
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 600vh;
+    background: white;
+    flex-direction: column;
+    
+}
+#head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background: black;
+    overflow: hidden;
+    border-radius: 0%;
+}
+#logoimg{
+    background: none;
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myGif{
+    background: none;
+    max-width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+.menu{
+    margin-bottom: 15%;
+    width: 10%;
+    background: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: visible;
+}
+#menu{
+    height: 100%;
+    width: 90%;
+    background: rgb(160, 154, 154);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: visible;
+}
+.menu-button {
+    padding:3px 50px;
+    background:white; 
+    color: purple;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition:all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-button:hover{
+    color: rgb(160, 65, 249);
+    background:rgb(0, 0, 0);
+}
+  /* قائمة الخيارات */
+  .menu-options {
+    position: absolute;
+    top: 100%; /* أسفل الزر */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    background: none; /* أزرق */
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    gap: 10px;
+  }
+  .menu-options a {
+    padding: 10px;
+    color: rgb(0, 0, 0); /* أخضر فاتح */
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+
+  .menu-options a:hover {
+    background: orange;
+    
+  }
+
+  /* عندما تظهر القائمة */
+  .menu-options.show {
+    max-height: 500px; 
+    background: none;/* يكفي لكل العناصر */
+  }
+
+
+
+.text{
+    max-width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    background: none;
+}
+.text>.h1{
+    background: none;
+    width: 90%;
+}
+.text>.h1>h1{
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 900;
+    direction: rtl;
+    color:white;
+    font-size: clamp(40px,2vw,18px);
+    width: 90%;
+    background: none;
+    text-align: start;
+}
+.text>.par{
+    background: none;
+    width: 90%;
+}
+.text>.par>p{
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 400;
+    direction: rtl;
+    color:rgb(211, 211, 211);
+    font-size: 16px;
+    width: 90%;
+    text-align: start;
+    background: none;
+
+}
+
+
+
+#middil{
+    background:rebeccapurple;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 0%;
+    gap: 100px;
+}
+.scroll{
+    width: 90%;
+    height: fit-content;
+    background:none;
+    border: 1px solid rgb(0, 0, 0,0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.scrolltext{
+    width: 100%;
+    height: 15%;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.scrolltext>.h3text{
+    width: 100%;
+    background: none;
+    text-align: center;
+    background: none;
+}
+.scrolltext>.h3text>h3{
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 900;
+    background: none;
+}
+.scrolltext>.scrollpar{
+    background: none;
+}
+.scrolltext>.scrollpar>p{
+    font-size:16px ;
+    font-family: "Marhey", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background: none;
+    color: rgb(0, 0, 0,0.6);
+}
+#logodisegn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#logodisegn>.logos{
+    width: 90%; 
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, rgb(16, 199, 16,0.6),rgb(16, 124, 16,0.4));
+    overflow: hidden;
+    
+}
+.logos>.item{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    background: none;
+}
+.logos>.item>.logo{
+    width: 100%; 
+    background: none;
+    overflow: hidden;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    margin-bottom: 15px;
+}
+
+.item>.logo>img{
+    width: 100%;
+    background: none;
+    transition: all 0.3s;
+}
+.item>.logo>img:hover{
+    scale: 1.2;
+    rotate: 2deg;
+    cursor: pointer;
+}
+.item>p{
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: white;
+    font-weight: 200;
+    width: 75%;
+    background: rgb(0, 0, 0,0.2);
+    text-align: center;
+}
+#graphicdisegn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#graphicdisegn>.logos{
+    width: 90%; 
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:none;
+    overflow: hidden;
+    
+}
+#graphicdisegn>.logos>.item>.logo{
+    border: none;
+}
+#graphicdisegn>.logos>.item>p{
+    border-radius: 5px;
+    padding:0px 10px ;
+    width: fit-content;
+    background: rgb(0, 0, 0,0.1);
+}
