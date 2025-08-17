@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Cairo:wght@200..1000&display=swap');
 *{
     font-family: "Caprasimo", serif;
     font-weight: 400;
@@ -8,7 +10,6 @@
     padding: 0;
     margin: 0;
     user-select: none;
-    background: white;
 }
 body{
     display: flex;
@@ -17,34 +18,69 @@ body{
     height: 600vh;
     background: white;
     flex-direction: column;
-    
+    gap: 15px;
+}
+.option{
+    width: 100%;
+}
+.option>nav{
+    direction: rtl;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+.option>nav>li{
+    background: none;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option>nav>li>a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    transition:all 0.3s;
+    background: none;
+}
+.option>nav>li>a:hover{
+    color: rgb(0, 0, 0,0.6);
+    text-decoration: underline;
+    translate: 5px;
 }
 #head{
     width: 100%;
-    height: 10%;
+    height: 17%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-top: 0.5%;
     background: black;
     overflow: hidden;
-    border-radius: 0%;
 }
 #logoimg{
-    background: none;
-    width: 45%;
-    height: auto;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #myGif{
-    background: none;
     max-width: 60%;
     height: auto;
     object-fit: cover;
     animation: myGif 2.9s;
+    animation-delay: 0.7s;
 }
 @keyframes myGif {
     0%{
@@ -63,96 +99,18 @@ body{
     }
 }
 
-
-
-.menu{
-    margin-bottom: 25%;
-    width: 10%;
-    background: none;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    overflow: visible;
-    
-}
-#menu{
-    height: 100%;
-    width: 90%;
-    background: rgb(160, 154, 154);
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    overflow: visible;
-}
-.menu-button {
-    border-radius: 10px 10px 5px  5px ;
-    padding:5px 50px;
-    background:white; 
-    color: purple;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    transition:all 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu-button:hover{
-    color: rgb(160, 65, 249);
-    background:rgb(0, 0, 0);
-}
-  /* قائمة الخيارات */
-  .menu-options {
-    position: absolute;
-    top: 100%; /* أسفل الزر */
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 10px;
-    background: none; /* أزرق */
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    min-width: 150px;
-    gap: 10px;
-  }
-  .menu-options a {
-    padding: 10px;
-    color: rgb(0, 0, 0); /* أخضر فاتح */
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    transition: background 0.2s;
-  }
-
-  .menu-options a:hover {
-    background: orange;
-    
-  }
-
-  /* عندما تظهر القائمة */
-  .menu-options.show {
-    max-height: 500px; 
-    background: none;/* يكفي لكل العناصر */
-  }
-
-
-
 .text{
-    max-width: 45%;
-    height: auto;
+    max-width: 70%;
+    padding: 10px;
     display: flex;
+    direction: rtl;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    background: none;
+    flex-direction: column;
+    gap: 15px;
 }
 .text>.h1{
-    background: none;
-    width: 90%;
+    width: 100%;
 }
 .text>.h1>h1{
     font-family: "Cairo Play", sans-serif;
@@ -160,37 +118,37 @@ body{
     direction: rtl;
     color:white;
     font-size: clamp(40px,2vw,18px);
-    width: 90%;
+    width: 100%;
     background: none;
     text-align: start;
 }
 .text>.par{
     background: none;
-    width: 90%;
+    width: 100%;
 }
 .text>.par>p{
-    font-family: "Cairo Play", sans-serif;
+     font-family: "Beiruti", sans-serif;
     font-weight: 400;
     direction: rtl;
-    color:rgb(211, 211, 211);
+    color:rgb(0, 0, 0);
     font-size: 16px;
-    width: 90%;
-    text-align: start;
-    background: none;
-
+    width: fit-content;
+    background: #10c710;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 
 
 #middil{
-    width: 99%;
+    width: 100%;
     height: 80%;
     overflow: hidden;
     border-radius: 0%;
-    gap: 100px;
+    gap: 5%;
 }
 .scroll{
-    width: 90%;
+    width: 99%;
     height: fit-content;
     background:none;
     border: 1px solid rgb(0, 0, 0,0.5);
@@ -199,7 +157,7 @@ body{
     align-items: center;
     flex-direction: column;
     padding-bottom: 15px;
-    margin-top: 15px;
+
     overflow: hidden;
 }
 
@@ -221,7 +179,7 @@ body{
 .scrolltext>.h3text>h3{
     width: 100%;
     font-size: 2rem;
-    font-family: "Cairo Play", sans-serif;
+     font-family: "Cairo", sans-serif;
     font-weight: 900;
     background: none;
 }
@@ -229,8 +187,8 @@ body{
     background: none;
 }
 .scrolltext>.scrollpar>p{
-    font-size:16px ;
-    font-family: "Marhey", sans-serif;
+    font-size:18px ;
+     font-family: "Beiruti", sans-serif;
     font-weight: 500;
     text-align: center;
     background: none;
@@ -241,7 +199,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    
+    background: #a855f7;
+    border: none;
+    margin-top: 10%;
 }
 #logodisegn>.logos{
     width: 90%; 
@@ -268,8 +228,8 @@ body{
     overflow: hidden;
     border: 1px solid rgb(0, 0, 0,0.2);
     margin-bottom: 15px;
+    border-radius: 125px;
 }
-
 .item>.logo>img{
     width: 100%;
     background: none;
@@ -281,42 +241,117 @@ body{
     cursor: pointer;
 }
 .item>p{
+    font-family: "Beiruti", sans-serif;
     border-radius: 5px;
     padding: 5px 0px;
-    color: rgb(200, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 200;
     width: 75%;
-    background: #10c710;
+    background: #000000;
     text-align: center;
 }
+
+
+
+
+
+
+/*ألمربع الثاني في المنتصف*/
+
+
 #graphicdisegn{
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    background: #10c710;
+    flex-direction: row;
+    gap: 10px;
+    border: none;
+}
+#graphicdisegn>.scrolltext{
+    width: 60%;
+    height: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/graphicdisegnimge/fainalfdksf.png") no-repeat;
+    background-position: 0 -150px;
+    background-size: cover;
+    padding: 15px;
 }
 #graphicdisegn>.logos{
-    width: 90%; 
-    height: fit-content;
+    width: 40%; 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background:none;
+    background:#10c710;
     overflow: hidden;
-    
 }
 #graphicdisegn>.logos>.item>.logo{
     border: none;
+    border-radius: 0;
+    width: 200px;
+    height: 75%;
+}
+#girl{
+    width: 100%;
+    object-fit: cover;
+}
+#nike{
+    width: 100%;
+    object-fit: cover;
+}
+#hand{
+    width: 100%;
+    object-fit: cover;
 }
 #graphicdisegn>.logos>.item>p{
     border-radius: 5px;
-    padding:0px 10px ;
+    padding:5px 20px ;
     width: fit-content;
-    background: white;
-    color: blue;
+}
+#graphicdisegn>.scrolltext{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 0px;
 }
 
+
+#graphicdisegn>.scrolltext>.h3text{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+#graphicdisegn>.scrolltext>.h3text>h3{
+    color: #10c710;
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+
+}
+#graphicdisegn>.scrolltext>.scrollpar>p{
+    background: #10c710;
+    padding: 5px 10px 5px 5px;
+    justify-content: flex-end;
+
+}
+#graphicdisegn>.scrolltext>.scrollpar{
+    transition: all 0.3s;
+}
+#graphicdisegn>.scrolltext>.scrollpar:hover{
+    translate:-5px 0px;
+}
+
+
+
+
+
+/* المربع الثالث في المنتصف*/
 #website{
     width: 90%;
     height: 50%;
@@ -369,3 +404,7 @@ body{
     background-size: cover;
     
 }
+
+
+
+
