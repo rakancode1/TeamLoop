@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="teamloopwebsite\img\logo-removebg-preview.png">
+    <link rel="icon" type="image/png" href="img/logo-removebg-preview.png">
   
     <title>Teamloop</title>
 </head>
@@ -17,12 +17,28 @@
 <body>
     <div class="option">
         <nav>
-            <li><a href="#"><i class="fa-sharp fa-thin fa-house fa-xs"></i>
-                <p>ألرئيسيــة</p></a></li>
-            <li><a href="#logodisegn"><p>شعارات</p></a></li>
-            <li><a href="#graphicdisegn"><p>كرافك دزاين</p></a></li>
-            <li><a href="#"><p>مواقع ألكترونية</p></a></li>
-            <li><a href="#"> <p>تواصل معنا</p></a></li>
+            <div id="logonavbar"><img src="teamloopwebsite/img/Discover_the_World_s_Best_Professional_Designers_for_Unmatched_Creativity-removebg-preview.png" style="width: 50px;"></div>
+            <div id="navbar">
+                <li><div class="iconnavbar">
+                    <img src="teamloopwebsite/img/Home_app_icon-removebg-preview.png" style="width: 25px;" alt="">
+                    <a href="#"><p>ألرئيسيــة</p></a></div></li>
+                <li><div class="iconnavbar">
+                    <img src="teamloopwebsite/img/Baixar_logotipo_preto_do_whatsapp__ícone_preto_do_whatsapp_vetor_grátis-removebg-preview.png" style="width: 25px;" alt="">
+                    <a href="#logodisegn"><p>شعارات</p></a></div></li>
+                <li>
+                    <div class="iconnavbar">
+                        <img src="teamloopwebsite/img/qxB1zO5q-removebg-preview.png" style="width: 25px;" alt="">
+                        <a href="#graphicdisegn"><p>كرافك دزاين</p></a></div></li>
+                <li>
+                    <div class="iconnavbar">
+                        <img src="teamloopwebsite/img/cover-removebg-preview.png" style="width: 25px;" alt="">
+                        <a href="#"><p>مواقع ألكترونية</p></a></div></li>
+                <li>
+                    <div class="iconnavbar">
+                        <img src="teamloopwebsite/img/Question_Mark_Vector_Icon__Question_Mark_Drawing__Question_Icons__Mark_Icons_PNG_and_Vector_with_Transparent_Background_for_Free_Download-removebg-preview.png" style="width: 15px;" alt="">
+                        <a href="#questions_div"> <p>ألاسئلة ألشائعة</p></a></div></li>
+            </div>
+            <div id="btnnavbar"><button type="reset" id="btntextus" onclick="hello()"><p>راسلنا ألان</p> </button></div>
         </nav>
     </div>
     <div id="head">
@@ -36,23 +52,29 @@
             </div>
         </div>
     </div>
-
-
-
-
     <div id="middil" style="display: flex; justify-content: flex-start;align-items: center; flex-direction: column;">
+        <div class="infocont" >
+            <div id="whyus" class="divinfotext">
+                <h1>نضع احتياجاتك في المقدمة</h1>
+                <p>نحرص دائمًا على فهم أهدافك وتقديم حلول مخصصة تساعدك على تحقيق نتائج ملموسة تعكس رؤيتك.</p>
+            </div>
+            <div id="ourservises" class="divinfotext">
+                <h1>جودة تضمن لك الثقة</h1>
+                <p>نلتزم بأعلى معايير الاحترافية، مع متابعة مستمرة ودعم متكامل لضمان نجاحك على المدى البعيد.</p>
+            </div>
+        </div>
         <div class="scroll" id="logodisegn">
             <div class="scrolltext">
                 <div class="h3text">
                     <h3>شعارات</h3>
                 </div>
                 <div class="scrollpar">
-                    <p>مجموعة شعارات مبتكرة من أعمالنا تعكس هوية علامتك ألتجارية وتمنحها حضورا  قويا في ألسوق</p>
+                    <p>طريقة تصميمنا للشعارات فريدة تعبّر عن هوية علامتك التجارية بأسلوب <mark>احترافي</mark> يميزك عن المنافسين ويترك أثراً دائماً</p>
                 </div>
             </div>
             <div class="logos">
                 <div class="item">
-                    <div class="logo spashel"><img src="img/logos/Your_Design_Playground__Experiment___Create_a_Logo_You_Truly_Love_-removebg-preview.png" alt=""></div>
+                    <div class="logo"><img src="img/logos/edit-removebg-preview.png" alt=""></div>
                     <p class="info">متجر ورد</p>
                 </div>
                 <div class="item">
@@ -76,22 +98,23 @@
         <div class="scroll" id="graphicdisegn">
             <div class="scrolltext">
                 <div class="h3text">
-                    <h3>كرافك دزاين</h3>
+                    <h3 >كرافك دزاين</h3>
                 </div>
                 <div class="scrollpar">
                     <p>مجموعة شعارات مبتكرة تعكس هوية علامتك ألتجارية وتمنحها حضورا  قويا في ألسوق</p>
                 </div>
             </div>
             <div class="logos">
-                <div class="item">
-                    <div class="logo"><img id="nike" src="img/graphicdisegnimge/By TEAMLOOP2.png" alt=""></div>
+                <div class="item item1">
+                    <div class="logo"></div>
                     <p class="info">بــطريقتنا</p>
                 </div>
-                <div class="item">
-                    <div class="logo"><img id="girl" src="img/graphicdisegnimge/hjj.png" alt=""></div>
+                <div class="item item2">
+                    <div class="logo"></div>
                     <p class="info">نـــــصنع</p>
                 </div>
             </div>
+            
         </div>
         
 
@@ -99,16 +122,119 @@
 
 
         <div class="scroll" id="website">
-            <div class="items item1"></div>
-            <div class="items item2"></div>
-            <div class="items item3"></div>
-            <div class="items item4"></div>
+            <div class="ite"></div>
+            <div class="ite"></div>
+            <div class="ite"></div>
+            <div class="ite"></div>
             
         </div>
-        <div class="scroll" id="teamloop"></div>
+        
+        <div class="scroll" id="questions_div">
+            <div class="up_div">
+                <div class="up_div_for_rady_anser">
+                    <h3>1.ما هي الخدمات التي يقدمها Team Loop؟ </h3>
+                    <p>نقدم خدمات تصميم المواقع الإلكترونية، تصميم الشعارات، بناء الهوية البصرية، إضافة إلى التصاميم الجرافيكية الاحترافية التي تعكس هوية علامتك التجارية.</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>2. كم يستغرق تنفيذ تصميم شعار أو موقع؟</h3>
+                    <p>يعتمد الوقت على حجم المشروع والتفاصيل المطلوبة، لكن عادةً يستغرق تصميم شعار من 3 – 7 أيام، بينما المواقع قد تحتاج من أسبوعين إلى شهر.</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>3. هل يمكنني طلب تصميم مخصص بالكامل يناسب رؤيتي؟</h3>
+                    <p>بالتأكيد، جميع مشاريعنا مصممة خصيصًا لتلائم أهدافك ورؤيتك التجارية، ونأخذ بعين الاعتبار كل ملاحظة تقدمها.</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>4. ما هي خطوات العمل معكم؟</h3>
+                    <p> نتلقى طلبك ونفهم احتياجاتك.
+                     <br>نضع خطة عمل وجدول زمني.
+                     <br>نعرض لك التصاميم المبدئية.
+                    <br>نعدل بناءً على ملاحظاتك.
+                     <br>نسلمك المشروع النهائي بجودة عالية.</p>
+                </div>
+            </div>
+            <div class="up_div">
+                
+            </div>
+            <div class="up_div">
+                <div class="up_div_for_rady_anser">
+                    <h3>5. هل أستطيع متابعة التعديلات على التصميم أثناء التنفيذ؟</h3>
+                    <p>نعم، نحن نشاركك مراحل العمل أولًا بأول لتضمن أن النتيجة النهائية ترضيك تمامًا.</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>6. هل توفرون دعمًا بعد تسليم المشروع؟</h3>
+                    <p>نعم، نوفر دعمًا فنيًا بعد التسليم لفترة محددة للتأكد من رضاك وضمان عمل المشروع بسلاسة.</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>7. ما هي طرق الدفع المتاحة؟</h3>
+                    <p>نوفر طرق دفع آمنة ومرنة (بطاقة كي كارد  ، أو طريق شريحة اسياسيل ).</p>
+                </div>
+                <div class="up_div_for_rady_anser">
+                    <h3>8. كيف يمكنني طلب خدمة من Team Loop؟</h3>
+                    <p>يمكنك التواصل معنا عبر صفحة "تواصل معنا" في الموقع أو عبر حساباتنا الرسمية على شبكات التواصل الاجتماعي.</p>
+                </div>
+            </div>
+            <div class="down_div_for_user_q">
+                <div class="do_u_hav_q">
+                    <h2>هل لديك سؤال اخر؟</h2>
+                    <h5>لا تتردد في طرح أي سؤال يخص خدماتنا — نحن هنا لمساعدتك! تواصل معنا عبر أي من المنصات الموجودة أدناه بكل سهولة.</h5>
+                </div>
+                <div class="conect_with_us">
+                    <a href="#"><div class="conect_ways">
+                        <img src="teamloopwebsite/img/Email_Icon_Clipart_PNG_Images__Email_Icon__Email_Icons__Letter_Clipart__Address_PNG_Image_For_Free_Download-removebg-preview.png" width="30px">
+                        <h5>فريق الدعم</h5>
+                    </div></a>
+                    <a href="#"><div class="conect_ways">
+                        <img src="teamloopwebsite/img/Baixar_logotipo_preto_do_whatsapp__ícone_preto_do_whatsapp_vetor_grátis-removebg-preview.png" width="50px">
+                        <h5>ألواتس أب</h5>
+                    </div></a>
+                    <a href="#"><div class="conect_ways">
+                        <img src="teamloopwebsite/img/fCVkCJHI-removebg-preview.png" width="50px">
+                        <h5>أنستجرام</h5>
+                    </div></a>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="footer">
-
+        <div class="upfooterdiv">
+            <div class="upfooterinfolink" id="logoteamloop">
+                <img src="teamloopwebsite/img/Discover_the_World_s_Best_Professional_Designers_for_Unmatched_Creativity-removebg-preview.png"  style="width: 100px;">
+                <div id="location">
+                    <img src="teamloopwebsite/img/ícone_De_Localização_Vetorial_PNG___Localização_De_Clipart__Localização_De_ícones__Localização_Do_ícone_Imagem_PNG_e_Vetor_Para_Download_Gratuito-removebg-preview.png" style="width: 20px;">
+                    <p>مِـن ألموصل ألحدباء</p>
+                </div>
+                <div id="email-phone">
+                <p><mark class="email-phone">Phone:</mark>+964 772 5367 917</p>
+                <p><mark class="email-phone">Email:</mark>teamloopiq@gmail.com</p>
+                </div>
+                <div class="socialmedia">
+                    <a target="_blank" href="https://www.instagram.com/teamlo_op?igsh=bnI4dWxzM3FhOTQ="><img id="insta" src="teamloopwebsite/img/fCVkCJHI-removebg-preview.png" ></a>
+                    <a target="_blank" href="https://wa.me/qr/LZFNHJ3YNWKNA1"><img id="whatsapp" src="teamloopwebsite/img/Baixar_logotipo_preto_do_whatsapp__ícone_preto_do_whatsapp_vetor_grátis-removebg-preview.png" ></a>
+                </div>
+            </div>
+            <div class="upfooterinfolink" id="homelink">
+                <h2>ألرئيسية</h2>
+                <li><a href="#logodisegn"><p>شعارات</p></a></li>
+                <li><a href="#graphicdisegn"><p>كرافك دزاين</p></a></li>
+                <li><a href="#"><p>مواقع ألكترونية</p></a></li>
+            </div>
+            <div class="upfooterinfolink" id="servises">
+                <h2>خــدمتنا</h2>
+                <li><a href="#logodisegn"><p>شعارات</p></a></li>
+                <li><a href="#graphicdisegn"><p>كرافك دزاين</p></a></li>
+                <li><a href="#"><p>مواقع ألكترونية</p></a></li>
+            </div>
+            <div class="upfooterinfolink" id="morelink">
+                <h2>ألــمزيد</h2>
+                <li><a href="#logodisegn"><p>ألمزيد من اعمالنا</p></a></li>
+                <li><a href="#graphicdisegn"><p>كرافك دزاين</p></a></li>
+                <li><a href="#"><p>مواقع ألكترونية</p></a></li>
+            </div>
+        </div>
+        <div id="letter"><h1>نصنع لك هويــــة تبقى في ألاذهان </h1></div>
+        <div class="downfooterdiv">
+            <p><mark>Teamloop</mark>2025© All Rights Reserved.</p>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

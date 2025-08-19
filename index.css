@@ -3,103 +3,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Cairo:wght@200..1000&display=swap');
-*{
+
+* {
     font-family: "Caprasimo", serif;
     font-weight: 400;
     font-style: normal;
     padding: 0;
     margin: 0;
     user-select: none;
+    font-family: "Beiruti", sans-serif;
 }
-body{
+
+body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 600vh;
-    background: white;
+    width:100%;
+    background: #e5e7eb;
     flex-direction: column;
-    gap: 15px;
+
 }
-.option{
+
+.option {
     width: 100%;
 }
-.option>nav{
+
+.option>nav {
     direction: rtl;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    padding: 15px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(255, 255, 255,0.5);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
-.option>nav>li{
-    background: none;
+.option>nav{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#logonavbar{
+    padding: 10px;
     width: 10%;
+    text-align:end;
+}
+#navbar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#btnnavbar{
+    width: 20%;
+    text-align: center;
+}
+button{
+    border: none;
+    padding: 5px 30px;
+    transition: all 0.3s;
+    border-radius: 15px;
+    background: #10c710;
+}
+button:hover{
+    translate: -5px 0px;
+    background: rgb(16, 199, 16,0.7);
+    cursor: pointer;
+}
+button>p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "Beiruti", sans-serif;
+}
+.option>nav>#navbar>li {
+    background: none;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.option>nav>li>a{
+
+.option>nav>#navbar>li>a {
     text-decoration: none;
     text-align: center;
     font-size: 1.2rem;
     color: #000000;
-    transition:all 0.3s;
     background: none;
 }
-.option>nav>li>a:hover{
-    color: rgb(0, 0, 0,0.6);
-    text-decoration: underline;
-    translate: 5px;
+.option>nav>#navbar>li>.iconnavbar>a>p{
+    font-weight: 600;
+    color: black;
+    font-size: 1.2rem;
 }
-#head{
-    width: 100%;
-    height: 17%;
+.option>nav>#navbar>li>.iconnavbar{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    overflow: hidden;
+
+    transition: all 0.3s;
+
 }
-#logoimg{
+.option>nav>#navbar>li>.iconnavbar:hover {
+    color: rgb(0, 0, 0, 0.6);
+    text-decoration: underline;
+    translate: 5px;
+}
+
+#head {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("teamloopwebsite/img/photo_2025-08-18_01-59-45.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 3vh;
+}
+
+#logoimg {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#myGif{
+
+#myGif {
     max-width: 60%;
     height: auto;
     object-fit: cover;
-    animation: myGif 2.9s;
-    animation-delay: 0.7s;
+    animation: myGif 2.9s infinite;
+    animation-delay: 1s;
 }
+
 @keyframes myGif {
-    0%{
+    0% {
         translate: 0px;
     }
-    50%{
+
+    50% {
         translate: 50px;
         rotate: 25deg;
     }
-    75%{
+
+    75% {
         translate: -20px;
         rotate: -15deg;
     }
-    100%{
+
+    100% {
         translate: 0px;
     }
 }
 
-.text{
+.text {
     max-width: 70%;
     padding: 10px;
     display: flex;
@@ -109,49 +174,88 @@ body{
     flex-direction: column;
     gap: 15px;
 }
-.text>.h1{
+
+.text>.h1 {
     width: 100%;
 }
-.text>.h1>h1{
+
+.text>.h1>h1 {
     font-family: "Cairo Play", sans-serif;
     font-weight: 900;
     direction: rtl;
-    color:white;
-    font-size: clamp(40px,2vw,18px);
+    color: white;
+    font-size: clamp(40px, 2vw, 18px);
     width: 100%;
     background: none;
     text-align: start;
 }
-.text>.par{
+
+.text>.par {
     background: none;
     width: 100%;
 }
-.text>.par>p{
-     font-family: "Beiruti", sans-serif;
+
+.text>.par>p {
+    font-family: "Beiruti", sans-serif;
     font-weight: 400;
     direction: rtl;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     font-size: 16px;
     width: fit-content;
     background: #10c710;
     padding: 5px;
     border-radius: 5px;
 }
-
-
-
-#middil{
+#middil {
     width: 100%;
     height: 80%;
     overflow: hidden;
     border-radius: 0%;
-    gap: 5%;
+    
 }
-.scroll{
+/*المربعين (لماذا نحن)(خدماتنا)*/
+.infocont{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+    height: 25vh;
+    overflow: hidden;
+    background: #1e293b;
+    padding: 125px;
+    overflow: hidden;
+
+}
+.divinfotext{
+    max-width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-right: 30px solid #10c710;
+    direction: rtl;
+    background: black;
+    padding: 15px;
+    transition: all 0.3s;
+}
+.divinfotext:hover{
+    translate: -5px 0px;
+}
+.divinfotext>h1{
+    color: white;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+}
+.divinfotext>p{
+    color: rgb(255, 255, 255,0.6);
+    font-family: "Beiruti", sans-serif;
+}
+.scroll {
     width: 99%;
     height: fit-content;
-    background:none;
-    border: 1px solid rgb(0, 0, 0,0.5);
+    background: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -161,7 +265,7 @@ body{
     overflow: hidden;
 }
 
-.scrolltext{
+.scrolltext {
     width: 100%;
     height: 15%;
     background: none;
@@ -170,51 +274,59 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.scrolltext>.h3text{
+
+.scrolltext>.h3text {
     width: 100%;
     background: none;
     text-align: center;
     background: none;
 }
-.scrolltext>.h3text>h3{
+
+.scrolltext>.h3text>h3 {
     width: 100%;
     font-size: 2rem;
-     font-family: "Cairo", sans-serif;
-    font-weight: 900;
+    font-family: "Cairo", sans-serif;
+    font-weight: 500;
     background: none;
 }
-.scrolltext>.scrollpar{
+
+.scrolltext>.scrollpar {
     background: none;
 }
-.scrolltext>.scrollpar>p{
-    font-size:18px ;
-     font-family: "Beiruti", sans-serif;
+
+.scrolltext>.scrollpar>p {
+    font-size: 18px;
+    font-family: "Beiruti", sans-serif;
     font-weight: 500;
     text-align: center;
     background: none;
-    color: rgb(0, 0, 0,0.6);
+    color: rgb(0, 0, 0, 0.6);
 }
-#logodisegn{
+
+#logodisegn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    background: #a855f7;
+    background: #e5e7eb;
     border: none;
-    margin-top: 10%;
+    width: 100%;
+    overflow: hidden;
 }
-#logodisegn>.logos{
-    width: 90%; 
+
+#logodisegn>.logos {
+    width: 90%;
     height: fit-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: none;
     overflow: hidden;
-    
+
 }
-.logos>.item{
-    
+
+.logos>.item {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -222,35 +334,45 @@ body{
     padding: 15px;
     background: none;
 }
-.logos>.item>.logo{
-    width: 100%; 
+
+.logos>.item>.logo {
+    width: 100%;
     background: none;
     overflow: hidden;
-    border: 1px solid rgb(0, 0, 0,0.2);
+    border: 1px solid rgb(0, 0, 0, 0.2);
     margin-bottom: 15px;
     border-radius: 125px;
 }
-.item>.logo>img{
+
+.item>.logo>img {
     width: 100%;
     background: none;
     transition: all 0.3s;
 }
-.item>.logo>img:hover{
+
+.item>.logo>img:hover {
     scale: 1.2;
     rotate: 2deg;
     cursor: pointer;
 }
-.item>p{
+
+.item>p {
     font-family: "Beiruti", sans-serif;
     border-radius: 5px;
     padding: 5px 0px;
     color: rgb(255, 255, 255);
     font-weight: 200;
     width: 75%;
-    background: #000000;
+    background: #1e293b;
     text-align: center;
 }
-
+mark{
+    padding: 0px 5px;
+    background: #1e293b;
+    color: #ffffff;
+    font-family: "Beiruti", sans-serif;
+    border-radius: 5px;
+}
 
 
 
@@ -259,16 +381,22 @@ body{
 /*ألمربع الثاني في المنتصف*/
 
 
-#graphicdisegn{
-    padding: 0;
+#graphicdisegn {
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     border: none;
+    width: 100%;
+    height: 53vh;
+    margin-top: 5px;
+    background: #10c710;
+    overflow: hidden;
 }
-#graphicdisegn>.scrolltext{
+
+#graphicdisegn>.scrolltext {
     width: 60%;
     height: 100%;
     background: none;
@@ -281,38 +409,55 @@ body{
     background-size: cover;
     padding: 15px;
 }
-#graphicdisegn>.logos{
-    width: 40%; 
+
+#graphicdisegn>.logos {
+    width: 40%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#10c710;
     overflow: hidden;
+    gap: 5px;
 }
-#graphicdisegn>.logos>.item>.logo{
-    border: none;
-    border-radius: 0;
-    width: 200px;
-    height: 75%;
-}
-#girl{
+#graphicdisegn>.logos>.item{
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+
 }
-#nike{
-    width: 100%;
-    object-fit: cover;
+#graphicdisegn>.logos>.item1{
+    background: url("img/graphicdisegnimge/By TEAMLOOP2.png");
+    background-position: center;
+    background-size: cover;
 }
-#hand{
-    width: 100%;
-    object-fit: cover;
+#graphicdisegn>.logos>.item2{
+    background: url("img/graphicdisegnimge/hjj.png");
+    background-position: center;
+    background-size: cover;
 }
-#graphicdisegn>.logos>.item>p{
-    border-radius: 5px;
-    padding:5px 20px ;
-    width: fit-content;
+#graphicdisegn>.logos>.item1>.info{
+    font-weight: 900;
+    font-size: 2.5rem;
+    rotate: -15deg;
+    margin-top: 200px;
+    font-family: "Cairo", sans-serif;
+    background: none;
+    color: #ffffff;
 }
-#graphicdisegn>.scrolltext{
+#graphicdisegn>.logos>.item2>p{
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    rotate: -15deg;
+    margin-top: 200px;
+    background: none;
+    color: #10c710;
+}
+#graphicdisegn>.scrolltext {
     display: flex;
     justify-content: flex-end;
     align-items: end;
@@ -320,12 +465,13 @@ body{
 }
 
 
-#graphicdisegn>.scrolltext>.h3text{
+#graphicdisegn>.scrolltext>.h3text {
     display: flex;
     justify-content: flex-end;
     align-items: end;
 }
-#graphicdisegn>.scrolltext>.h3text>h3{
+
+#graphicdisegn>.scrolltext>.h3text>h3 {
     color: #10c710;
     padding: 5px;
     width: 50%;
@@ -334,17 +480,20 @@ body{
     align-items: end;
 
 }
-#graphicdisegn>.scrolltext>.scrollpar>p{
+
+#graphicdisegn>.scrolltext>.scrollpar>p {
     background: #10c710;
     padding: 5px 10px 5px 5px;
     justify-content: flex-end;
 
 }
-#graphicdisegn>.scrolltext>.scrollpar{
+
+#graphicdisegn>.scrolltext>.scrollpar {
     transition: all 0.3s;
 }
-#graphicdisegn>.scrolltext>.scrollpar:hover{
-    translate:-5px 0px;
+
+#graphicdisegn>.scrolltext>.scrollpar:hover {
+    translate: -5px 0px;
 }
 
 
@@ -353,58 +502,251 @@ body{
 
 /* المربع الثالث في المنتصف*/
 #website{
-    width: 90%;
-    height: 50%;
-    background:rgb(112, 111, 104);
-    border: 2px solid rgba(247, 6, 6, 0.5);
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns:50% 50%;
+    width: 100%;
+    height: 30vh;
+    background: #1e293b;
+}
+#questions_div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    direction: rtl;
+    background: #1e293b;
+}
+.up_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
-#website>.items{
+.up_div_for_rady_anser{
+    width: 40%;
+    height: 30vh;
+    background: rgb(255, 255, 255,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:50px 15px;
+    gap: 10px;
+    transition:all 0.3s;
+}
+.up_div_for_rady_anser:hover{
+    background: #e5e7eb;
+    translate: -5px 0px; 
+}
+.up_div_for_rady_anser>h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.up_div_for_rady_anser>p{
+    font-size: 1.2rem;
+    background: #10c710;
+    padding: 15px;
+}
+.down_div_for_user_q{
     width: 100%;
-    height: 100%;
-    background: rgb(107, 40, 40);
-    overflow: hidden;
+    background: #1e293b;
+    height:fit-content;
+}
+.do_u_hav_q{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    gap: 10px;
+}
+.do_u_hav_q>h2{
+    font-size: 2.5rem;
+    color: white;
+}
+.do_u_hav_q>h5{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255,0.7);
+}
+.conect_with_us{
+    width: 50%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 25px;
+}
+.conect_with_us>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.conect_ways{
+    width: 90%;
+    background:white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
     transition: all 0.3s;
 }
-#website>.items>img{
+.conect_ways:hover{
+    translate: -5px 0px;
+}
+.conect_ways>h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+/*  الجزء الاخير السفلي*/
+#footer{
     width: 100%;
+    height: fit-content;
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     overflow: hidden;
 }
-#website>.items:hover{
-    translate: 50px;
-    scale: 0.89;
+.upfooterdiv{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.upfooterinfolink{
+    height: 100%;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 80%;
+}
+/*المربع الاول*/
+#logoteamloop{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+}
+#location{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    width: 100%;
+}
+#logoteamloop>#location>p{
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+}
+#email-phone>p{
+    font-family: sans-serif ;
+    font-weight: 500;
+    font-size: 0.9rem;
+    user-select: text;
+}
+.email-phone{
+     font-family: sans-serif ;
+    background: none;
+    font-weight:700;
+    color: black;
     
 }
-#website>.item1{
-    background: url("img/graphicdisegnimge/hjj.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-    grid-row: 1/3;
-
-}#website>.item2{
-    background: url("img/graphicdisegnimge/hjj.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+.socialmedia{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#insta,#whatsapp{
+    width: 30px;
+    transition:all 0.3s;
+}
+#whatsapp:hover{
+    background: rgb(16, 199, 16,0.2);
+    border-radius: 100px;
+}
+#insta:hover{
+    background: rgb(16, 199, 16,0.2);
+    border-radius: 100px;
+}
+/*ألمربع الثاني*/
+#homelink{
+    gap: 25px;
+}
+h2{
+    font-weight: 600;
+}
+li>a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+li{
     
-
+    list-style: none;
 }
-#website>.item3{
-    background: url("img/graphicdisegnimge/hjj.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-    grid-row: 2/4;
-
+li>a>p{
+    color:rgb(0, 0, 0,0.7);
+    font-size: 1.2rem;
+    transition: all 0.3s;
 }
-#website>.item4{
-    background: url("img/graphicdisegnimge/hjj.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+.upfooterinfolink>li>a>p:hover{
+    text-decoration: underline;
+    translate: -5px 0px;
+    color:rgb(0, 0, 0,0.9);
+}
+/*المربع الثالث*/
+#servises{
+    gap: 25px;
+}
+/* المربع الرابع*/
+#morelink{
+    gap: 25px;
     
 }
-
-
-
-
+.downfooterdiv{
+    width: 100%;
+    padding: 15px;
+    border-top: 1px dashed rgb(0, 0, 0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.downfooterdiv>p>mark{
+    background: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.downfooterdiv>p{
+    font-weight: 700;
+    color: rgb(0, 0, 0,0.7);
+}
+#letter{
+    padding: 25px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#letter>h1{
+    padding: 0px 15px;
+    text-align: center;
+    font-family: "Cairo Play", sans-serif;
+    font-weight: 700;
+    transition: all 0.9s;
+}

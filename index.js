@@ -10,4 +10,10 @@ const btn = document.getElementById('menuBtn');
   window.addEventListener('click', () => {
     options.classList.remove('show');
   });
- 
+
+
+
+function showanser() {
+   document.getElementById("anser1").innerHTML=answer;
+
+}
