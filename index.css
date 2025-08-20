@@ -533,10 +533,10 @@ mark{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding:50px 15px;
+    padding:50px 30px;
     gap: 10px;
     transition:all 0.3s;
-        overflow: hidden;
+    overflow: hidden;
 }
 .up_div_for_rady_anser:hover{
     background: #e5e7eb;
@@ -551,7 +551,7 @@ mark{
     font-size: 1.2rem;
     background: #10c710;
     padding: 15px;
-
+    width: 100%;
 }
 .down_div_for_user_q{
     width: 100%;
@@ -634,7 +634,6 @@ mark{
     align-items: center;
     flex-direction: column;
     gap: 10px;
-
     height: 80%;
 }
 /*المربع الاول*/
@@ -753,6 +752,7 @@ li>a>p{
     font-weight: 700;
     transition: all 0.9s;
 }
+/*Resposiev diesgn */
 @media (max-width:600px) {
     .scroll>.logos{
         width: 100px;
@@ -777,5 +777,33 @@ li>a>p{
     }
     .logos>.item>.logo {
         width: 50%;
+    }
+    .upfooterdiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #logoteamloop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #location{
+        justify-content: center;
+        align-items: center;
+    }
+    #email-phone{
+        justify-content: center;
+        align-items: center;
+    }
+    .socialmedia{
+        justify-content: center;
+        align-items: center;
+    }
+    .infocont{
+        height: fit-content;
+        flex-direction: column;
+        width: 80%;
     }
 }
