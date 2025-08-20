@@ -752,6 +752,7 @@ li>a>p{
     font-weight: 700;
     transition: all 0.9s;
 }
+
 /*Resposiev diesgn */
 @media (max-width:600px) {
     .scroll>.logos{
