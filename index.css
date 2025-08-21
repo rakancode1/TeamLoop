@@ -54,6 +54,9 @@ body {
     width: 10%;
     text-align:end;
 }
+#logonavbar>img{
+    width: 40%;
+}
 #navbar{
     width: 70%;
     display: flex;
@@ -755,6 +758,93 @@ li>a>p{
 
 /*Resposiev diesgn */
 @media (max-width:600px) {
+    .option>nav {
+     height: 9vh;
+     justify-content: space-around;
+    }
+    #logonavbar{
+        width: 20%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #logonavbar>img{
+    width: 50%;
+    text-align: center;
+}
+    #btnnavbar{
+       width: 20%;
+    }
+    #btntextus{
+        width: 100%;
+        padding:0;
+        overflow: hidden;
+    }
+    #btntextus>p{
+        width: 100%;
+        font-size: 12px;
+        padding: 5px 10px;
+        text-align: start;
+
+    }
+    #head {
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+}
+    #logoimg{
+        width: 100%;
+        margin-top: 10vh;
+    }
+    #myGif{
+        
+        width: 40%;
+    }
+    .text {
+    max-width: 100%;
+    gap: 0;
+}
+
+.text>.h1 {
+    width: 100%;
+    
+}
+
+.text>.h1>h1 {
+    font-size: 1rem;
+}
+
+.text>.par {
+    background: none;
+    width: 100%;
+}
+
+.text>.par>p {
+    font-size: 12px;
+    background: white;
+}
+
+    .infocont{
+        height: fit-content;
+        padding: 15px;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .divinfotext{
+        scale: 0.9;
+        width: 80%;
+    }
+    .divinfotext>h1{
+        font-size: 1rem;
+    }
+    .divinfotext>p{
+        font-size: 10px;
+    }
     .scroll>.logos{
         width: 100px;
         background: yellow;
@@ -771,11 +861,7 @@ li>a>p{
         height: 100%;
         padding: 25px;
     }
-    .option>nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
+
     .logos>.item>.logo {
         width: 50%;
     }
@@ -785,6 +871,9 @@ li>a>p{
         align-items: center;
         flex-direction: column;
     }
+
+
+    /*true code*/
     #logoteamloop{
         display: flex;
         justify-content: center;
@@ -802,9 +891,5 @@ li>a>p{
         justify-content: center;
         align-items: center;
     }
-    .infocont{
-        height: fit-content;
-        flex-direction: column;
-        width: 80%;
-    }
+
 }
