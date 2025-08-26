@@ -17,3 +17,18 @@ function showanser() {
    document.getElementById("anser1").innerHTML=answer;
 
 }
+
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  const icon = document.getElementById("menuIcon");
+
+  menu.classList.toggle("active");
+
+  // تغيير الأيقونة بين ☰ و ✖️
+  if (menu.classList.contains("active")) {
+    icon.textContent = "✖️";
+  } else {
+    icon.textContent = "☰";
+  }
+}

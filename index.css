@@ -24,6 +24,59 @@ body {
 
 }
 
+
+
+
+
+
+
+
+.menu-icon {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 1010;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      backdrop-filter: blur(5px); /* تأثير البلور */
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: right 0.4s ease;
+
+    }
+
+    .menu.active {
+      right: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 22px;
+      margin: 15px 0;
+      transition: transform 0.2s ease;
+    }
+
+    .menu a:hover {
+      transform: scale(1.1);
+      color: #0077ff;
+    }
+
+
+
+
 .option {
     width: 100%;
 }
@@ -757,45 +810,63 @@ li>a>p{
 }
 
 /*Resposiev diesgn */
+@media (min-width:600px) {
+    .menu-icon{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+
+}
 @media (max-width:600px) {
     .option>nav {
      height: 9vh;
-     justify-content: space-around;
+     justify-content: flex-end;
+     align-items: center;
     }
     #logonavbar{
-        width: 20%;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+        display: none;
     }
-    #logonavbar>img{
-    width: 50%;
-    text-align: center;
-}
     #btnnavbar{
        width: 20%;
+       padding: 15px;
     }
     #btntextus{
         width: 100%;
-        padding:0;
         overflow: hidden;
+        
     }
     #btntextus>p{
-        width: 100%;
         font-size: 12px;
-        padding: 5px 10px;
-        text-align: start;
-
+        text-align: center;
     }
     #head {
-        height: 60vh;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        }
+        .do_u_hav_q{
+            justify-content: flex-end;
+            background: rebeccapurple;
+            padding: 0%;
+        }
+    .conect_with_us{
+        gap: 15px;
         
-}
+    }
+    .conect_ways{
+        padding:5px ;
+        gap: 10px;
+        
+    }
+    .conect_ways>img{
+        width: 25px;
+    }
+    .conect_ways>h5{
+        font-size: 15px;
+    }
     #logoimg{
         width: 100%;
         margin-top: 10vh;
@@ -871,7 +942,7 @@ li>a>p{
         align-items: center;
         flex-direction: column;
     }
-
+    
 
     /*true code*/
     #logoteamloop{
