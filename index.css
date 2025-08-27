@@ -38,6 +38,10 @@ body {
       font-size: 24px;
       cursor: pointer;
       z-index: 1010;
+      background: rgba(255, 255, 255,0.2);
+      box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+      padding: 5px 10px;
+      border-radius: 125px;
     }
 
     .menu {
@@ -46,15 +50,15 @@ body {
       right: -100%;
       width: 70%;
       height: 100vh;
-      backdrop-filter: blur(5px); /* تأثير البلور */
-      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(5px);
+      background: rgba(255, 255, 255);
       box-shadow: -2px 0 10px rgba(0,0,0,0.2);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       transition: right 0.4s ease;
-
+        z-index: 100;
     }
 
     .menu.active {
@@ -73,6 +77,7 @@ body {
       transform: scale(1.1);
       color: #0077ff;
     }
+    
 
 
 
@@ -817,41 +822,83 @@ li>a>p{
     .menu{
         display: none;
     }
-
+    
 }
 @media (max-width:600px) {
     .option>nav {
-     height: 9vh;
-     justify-content: flex-end;
-     align-items: center;
-    }
-    #logonavbar{
-        display: none;
-    }
-    #btnnavbar{
-       width: 20%;
-       padding: 15px;
-    }
-    #btntextus{
-        width: 100%;
-        overflow: hidden;
-        
-    }
-    #btntextus>p{
-        font-size: 12px;
-        text-align: center;
+     display: none;
     }
     #head {
-        height: 100vh;
+        height: 50vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        }
-        .do_u_hav_q{
-            justify-content: flex-end;
-            background: rebeccapurple;
-            padding: 0%;
-        }
+        margin-top: 0;
+    }
+    #logoimg{
+        display: none;
+    }
+    /*نص الهيد*/
+    #head >.text{
+        height: 100%;
+        justify-content: center;
+    }
+    #head >.text>.h1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        
+    }
+    #head >.text>.h1>h1{
+        font-size: 1.5rem;
+    }
+    #head >.text>.par{
+        width: 90%;
+        padding:0px 20px;
+        
+    }
+    #head >.text>.par>p{
+        font-size: 16px;
+        color: whitesmoke;
+        background: none;
+    }
+    .infocont{
+        height: 60vh;
+        background: black;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0%;
+    }
+    .divinfotext{
+        background: #1e293b;
+        width: 75%;
+        height: 100%;
+        
+    }
+    .divinfotext>h1{
+        font-size: 1.2rem;
+    }
+    .divinfotext>p{
+        font-size: 16px;
+        color: whitesmoke;
+    }
+
+
+
+
+
+
+
+
+    .do_u_hav_q{
+        justify-content: flex-end;
+        background: rebeccapurple;
+        padding: 0%;
+    }
     .conect_with_us{
         gap: 15px;
         
@@ -867,55 +914,8 @@ li>a>p{
     .conect_ways>h5{
         font-size: 15px;
     }
-    #logoimg{
-        width: 100%;
-        margin-top: 10vh;
-    }
-    #myGif{
-        
-        width: 40%;
-    }
-    .text {
-    max-width: 100%;
-    gap: 0;
-}
 
-.text>.h1 {
-    width: 100%;
-    
-}
 
-.text>.h1>h1 {
-    font-size: 1rem;
-}
-
-.text>.par {
-    background: none;
-    width: 100%;
-}
-
-.text>.par>p {
-    font-size: 12px;
-    background: white;
-}
-
-    .infocont{
-        height: fit-content;
-        padding: 15px;
-        flex-direction: column;
-        width: 100%;
-
-    }
-    .divinfotext{
-        scale: 0.9;
-        width: 80%;
-    }
-    .divinfotext>h1{
-        font-size: 1rem;
-    }
-    .divinfotext>p{
-        font-size: 10px;
-    }
     .scroll>.logos{
         width: 100px;
         background: yellow;
@@ -924,9 +924,7 @@ li>a>p{
     .up_div{
         flex-direction: column;
     }
-    #navbar{
-        display: none;
-    }
+
     .up_div_for_rady_anser{
         width: 100%;
         height: 100%;

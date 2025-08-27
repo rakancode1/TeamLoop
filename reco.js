@@ -1,28 +1,16 @@
-let x=prompt("enter a number one?") ;
-    num1=Number(x)
-    s=prompt("sction?") ;
-    y=prompt("enter a number two?") ;
-    num2=Number(y)
-
+let x=document.getElementById("num1").value ;
+    s=document.getElementById("s").value;
+    y=document.getElementById("num2").value ;
 
 function chickTheName(){
-    if(s === "+"){
-        document.getElementById("up").innerHTML=num1+"+"+num2+"=";
-         document.getElementById("middil").innerHTML=num1+num2;
+    if(s == "+"){
+        console.log(x+y);
     }
-    else if (s === "*"){
-        document.getElementById("up").innerHTML=num1+"x"+num2+"=";
-
-        document.getElementById("middil").innerHTML=num1*num2;
-    }
-    else if (s == "-"){
-        document.getElementById("up").innerHTML=num1+"-"+num2+"=";
-
-        document.getElementById("middil").innerHTML=num1-num2;
+    else if (s == "*"){
+        console.log(x*y);
     }
     else{
-    document.getElementById("up")="eroor!";
-
+        console.log(x-y);
     }
+
 }
-chickTheName();
