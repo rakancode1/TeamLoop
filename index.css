@@ -251,21 +251,64 @@ button>p{
     text-align: start;
 }
 
-.text>.par {
-    background: none;
-    width: 100%;
-}
+.btn_phone_div{
+    width: 50%;
 
-.text>.par>p {
-    font-family: "Beiruti", sans-serif;
-    font-weight: 400;
-    direction: rtl;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    width: fit-content;
     background: #10c710;
-    padding: 5px;
-    border-radius: 5px;
+    padding:10px 15px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px black;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.btn_phone_div>a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.3s ease-out;
+    
+}
+.btn_phone_div>a>h5{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.btn_phone_div:hover{
+    translate: -1px 0px;
+}
+.btn_phone_div>a:hover{
+
+    justify-content: space-around;
+}
+.for_phone_div{
+    height: 60vh;
+    background: linear-gradient(to bottom,rgb(0, 0, 0,0.9),rgb(62, 61, 61));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.for_phone_div>.secten{
+    width: 25%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    overflow: hidden;
+    margin: 15px 0px;
+}
+.for_phone_div>.secten>h5{
+    font-size: 1.1rem;
+    color: whitesmoke;
+}
+.for_phone_div>.secten>img{
+    width: 100%;
+    border-radius: 10px;
 }
 #middil {
     width: 100%;
@@ -274,6 +317,7 @@ button>p{
     border-radius: 0%;
     
 }
+
 /*المربعين (لماذا نحن)(خدماتنا)*/
 .infocont{
     width: 100%;
@@ -822,6 +866,12 @@ li>a>p{
     .menu{
         display: none;
     }
+    .btn_phone_div{
+        display: none;
+    }
+    .for_phone_div{
+        display: none;
+    }
     
 }
 @media (max-width:600px) {
@@ -829,7 +879,11 @@ li>a>p{
      display: none;
     }
     #head {
-        height: 50vh;
+        width: 100%;
+        height: 90vh;
+        background: url("teamloopwebsite/img/taemloop.png")no-repeat;
+        background-size: cover;
+        background-position:0px 0px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -840,31 +894,25 @@ li>a>p{
     }
     /*نص الهيد*/
     #head >.text{
-        height: 100%;
-        justify-content: center;
+        width: 100%;
+        height:75%;
+        justify-content: flex-end;
+        align-items: center;
     }
     #head >.text>.h1{
         width: 100%;
-        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        box-sizing: border-box;
-        
+        padding:0px 100%;
+        background: #adfd42;
+        margin: 0%;
     }
     #head >.text>.h1>h1{
-        font-size: 1.5rem;
-    }
-    #head >.text>.par{
-        width: 90%;
-        padding:0px 20px;
-        
-    }
-    #head >.text>.par>p{
-        font-size: 16px;
-        color: whitesmoke;
-        background: none;
+        width: 100%;
+        font-size: 1.3rem;
+        color: #000;
+        background: #adfd42;
     }
     .infocont{
         height: 60vh;
