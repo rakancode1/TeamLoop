@@ -277,7 +277,6 @@ button>p{
     translate: -1px 0px;
 }
 .btn_phone_div>a:hover{
-
     justify-content: space-around;
 }
 .for_phone_div{
@@ -288,9 +287,11 @@ button>p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 0px;
+    overflow: hidden;
 }
 .up_secten{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +355,6 @@ button>p{
     height: 25vh;
     overflow: hidden;
     background: #1e293b;
-    padding: 125px;
     overflow: hidden;
 
 }
@@ -433,7 +433,7 @@ button>p{
 
 #logodisegn {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 50px;
     background: #e5e7eb;
@@ -514,17 +514,58 @@ mark{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5px;
-    border: none;
     width: 100%;
-    height: 53vh;
+    height: fit-content;
     margin-top: 2px;
     background: linear-gradient(to bottom , #adfd42,#10c710);
     overflow: hidden;
 }
+#graphicdisegn>.logos1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+}
+#graphicdisegn>.logos1>img{
+    width: 50%;
+}
 
+#graphicdisegn>.logos2{
+    width: 100%;
+    gap: 5px;
+}
+#graphicdisegn>.logos2>img{
+    width: 100%;
+}
 
+#graphicdisegn>.logos3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+     gap: 5px;
+}
+
+#tall{
+   width:50% ; 
+}
+#short{
+   width:50% ; 
+}
+#logos4{
+    width: 100%;
+    text-align: center;
+}
+#arrow{
+    width: 50px;
+    rotate: -90deg;
+    transition: all 0.3s ease-in-out;
+}
+#arrow:hover{
+    translate: 0px 5px;
+}
 
 
 
@@ -532,7 +573,7 @@ mark{
 #website{
     width: 100%;
     height: 30vh;
-    background: #1e293b;
+    background: linear-gradient(to top , #adfd42,#10c710);
 }
 #questions_div{
     width: 100%;
@@ -821,6 +862,7 @@ li>a>p{
         height:75%;
         justify-content: flex-end;
         align-items: center;
+        
     }
     #head >.text>.h1{
         width: 100%;
@@ -830,24 +872,30 @@ li>a>p{
         padding:0px 100%;
         background: #adfd42;
         margin: 0%;
+        
     }
     #head >.text>.h1>h1{
         width: 100%;
         font-size: 1.3rem;
         color: #000;
         background: #adfd42;
+        text-align: center;
+        gap: 10px;
     }
     .infocont{
-        height: fit-content;
+        height: 70vh;
         background: linear-gradient(to bottom , #adfd42,#10c710);
+        justify-content: flex-start;
         flex-direction: column;
         gap: 25px;
         padding: 25px;
     }
     .divinfotext{
         background: #1e293b;
-        width: 75%;
-        height: 100%;
+        width: 80%;
+        height: fit-content;
+        gap: 10px;
+        padding:25px 10px;
         
     }
     .divinfotext>h1{
@@ -858,6 +906,7 @@ li>a>p{
         color: whitesmoke;
     }
     #logodisegn{
+        height: 120vh;
         padding: 15px;
         margin-top: 2px;
         background: linear-gradient(to top , #adfd42,#10c710);
@@ -867,33 +916,63 @@ li>a>p{
     }
      .scroll>.logos{
         width: 100%;
-        background: yellow;
+        justify-content: center;
         flex-direction:column;
+
     }
     .scroll>.logos>.item{
         width: 100%;
+        padding: 0%;
         flex-direction:row;
         gap: 5px;
     }
     .logos>.item>.logo{
         border-radius: 0%;
-        border: 0px;
-        background: #ffffff35;
+        background:rgba(255, 255, 255, 0.4);
         width: 50%;
+        border: 0;
     }
-   
+    #questions_div{
+        background: linear-gradient(to bottom , #adfd42,#10c710);
+        justify-content: flex-start;
+    }
+    .up_div{
+        flex-direction: column;
+    }
 
+    .up_div_for_rady_anser{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        align-items: center;
+    }
+    .up_div_for_rady_anser>h3{
+        font-size: 1rem;
 
-
-
-
-
-
+    }
+    .up_div_for_rady_anser>p{
+        width: 75%;
+        font-size: 0.9rem;
+        text-align: center;
+        background: none;
+    }
+    .down_div_for_user_q{
+        background: none;
+        height: 50vh;
+        padding: 0;
+    }
 
     .do_u_hav_q{
         justify-content: flex-end;
-        background: rebeccapurple;
-        padding: 0%;
+        padding: 15px;
+    }
+    .do_u_hav_q>h2{
+        font-size: 25px;
+        width: 100%;
+    }
+    .do_u_hav_q>h4{
+        width: 75%;
+        color: whitesmoke;
     }
     .conect_with_us{
         gap: 15px;
@@ -913,16 +992,7 @@ li>a>p{
 
 
 
-    .up_div{
-        flex-direction: column;
-    }
-
-    .up_div_for_rady_anser{
-        width: 100%;
-        height: 100%;
-        padding: 25px;
-    }
-
+   /*true code*/
     .upfooterdiv{
         display: flex;
         justify-content: center;
@@ -931,7 +1001,7 @@ li>a>p{
     }
     
 
-    /*true code*/
+ 
     #logoteamloop{
         display: flex;
         justify-content: center;
