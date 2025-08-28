@@ -269,7 +269,6 @@ button>p{
     align-items: center;
     flex-direction: row;
     transition: all 0.3s ease-out;
-    
 }
 .btn_phone_div>a>h5{
     color: rgb(0, 0, 0);
@@ -283,32 +282,60 @@ button>p{
     justify-content: space-around;
 }
 .for_phone_div{
-    height: 60vh;
-    background: linear-gradient(to bottom,rgb(0, 0, 0,0.9),rgb(62, 61, 61));
+    height: 90vh;
+    background: linear-gradient(to top,rgb(0, 0, 0),rgb(73, 72, 72));
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-direction: column;
+    padding: 15px;
 }
-.for_phone_div>.secten{
-    width: 25%;
+.up_secten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.for_phone_div>.up_secten>.secten{
+    width: 50%;
     display: flex;
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    padding: 15px;
-    gap: 15px;
     overflow: hidden;
-    margin: 15px 0px;
 }
-.for_phone_div>.secten>h5{
+.for_phone_div>.up_secten>.secten>h5{
     font-size: 1.1rem;
-    color: whitesmoke;
-}
-.for_phone_div>.secten>img{
+    color: rgb(0, 0, 0);
+    background: #adfd42;
+    padding: 5px;
     width: 100%;
-    border-radius: 10px;
+    text-align: center;
+}
+.for_phone_div>.up_secten>.secten>img{
+    width: 100%;
+}
+.web_secten{
+    width: 100%;
+}
+.web_secten>.secten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web_secten>.secten>img{
+    width: 100%;
+}
+.web_secten>.secten>h5{
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    background: #adfd42;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
 }
 #middil {
     width: 100%;
@@ -915,11 +942,11 @@ li>a>p{
         background: #adfd42;
     }
     .infocont{
-        height: 60vh;
-        background: black;
+        height: fit-content;
+        background: linear-gradient(to bottom , #adfd42,#10c710);
         flex-direction: column;
         gap: 25px;
-        padding: 0%;
+        padding: 25px;
     }
     .divinfotext{
         background: #1e293b;
@@ -934,6 +961,26 @@ li>a>p{
         font-size: 16px;
         color: whitesmoke;
     }
+    #logodisegn{
+        background: linear-gradient(to top , #adfd42,#10c710);
+    }
+     .scroll>.logos{
+        width: 100%;
+        background: yellow;
+        flex-direction:column;
+    }
+    .scroll>.logos>.item{
+        width: 100%;
+        flex-direction:row;
+        gap: 5px;
+    }
+    .logos>.item>.logo{
+        border-radius: 0%;
+        border: 0px;
+        background: #ffffff35;
+        width: 50%;
+    }
+   
 
 
 
@@ -964,11 +1011,7 @@ li>a>p{
     }
 
 
-    .scroll>.logos{
-        width: 100px;
-        background: yellow;
-        flex-direction: column;
-    }
+
     .up_div{
         flex-direction: column;
     }
@@ -979,9 +1022,6 @@ li>a>p{
         padding: 25px;
     }
 
-    .logos>.item>.logo {
-        width: 50%;
-    }
     .upfooterdiv{
         display: flex;
         justify-content: center;
