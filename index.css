@@ -558,6 +558,7 @@ button>p{
     text-align: center;
 }
 #arrow{
+    margin-top: 25px;
     width: 50px;
     rotate: -90deg;
     transition: all 0.3s ease-in-out;
@@ -565,8 +566,37 @@ button>p{
 #arrow:hover{
     translate: 0px 5px;
 }
+ .arrow-container {
+      position: relative;
+      display: inline-block;
+    }
 
+    /* النص المخفي */
+    .arrow-text {
+      position: absolute;
+      bottom: 50%; /* يظهر فوق السهم */
+      left: 50%;
+      transform: translateX(-50%);
+      color: #000000;
+      padding: 5px 10px;
+      border-radius: 8px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none; /* ما يمنع الضغط على الرابط */
+    }
 
+    /* عند عمل هوفر يظهر النص */
+    .arrow-container:hover .arrow-text {
+      opacity: 1;
+    }
+
+    /* السهم */
+    .arrow-container img {
+      width: 50px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
 
 /* المربع الثالث في المنتصف*/
 #website{
@@ -838,6 +868,13 @@ li>a>p{
     
 }
 @media (max-width:600px) {
+    *{
+    a, button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+    }
+    }
     .option>nav {
      display: none;
     }
@@ -905,25 +942,46 @@ li>a>p{
         color: whitesmoke;
     }
     #logodisegn{
-        height: 120vh;
+        height: fit-content;
         padding: 15px;
-        margin-top: 2px;
+        gap: 25px;
         background: linear-gradient(to top , #adfd42,#10c710);
+        display: flex;
+        justify-content: flex-start;
+        margin: 0;
     }
     .scrolltext{
         width: 60%;
+        background: #adfd42;
+        padding:25px 25px;
+        border-radius:0px 0px 125px 125px ;
     }
+    #logodisegn>.ff{
+        background: #10c710;
+    }
+    .logos2{
+        margin-top: 25px;
+    }
+
      .scroll>.logos{
         width: 100%;
         justify-content: center;
         flex-direction:column;
 
     }
+    #graphicdisegn{
+        height: fit-content;
+        margin: 0;
+        margin-bottom: 2px;   
+    }
+    #graphicdisegn>.scrolltext{
+        margin-bottom: 75px;
+    }
     .scroll>.logos>.item{
         width: 100%;
         padding: 0%;
         flex-direction:row;
-        gap: 5px;
+        gap: 15px;
     }
     .logos>.item>.logo{
         border-radius: 0%;
@@ -974,7 +1032,7 @@ li>a>p{
         width: 100%;
     }
     .do_u_hav_q>h4{
-        width: 75%;
+        width: 90%;
         color: whitesmoke;
     }
     .conect_with_us{
@@ -1014,7 +1072,9 @@ li>a>p{
     }
     
 
- 
+    #footer{
+        margin-top: 50px;
+    }
     #logoteamloop{
         display: flex;
         justify-content: center;
