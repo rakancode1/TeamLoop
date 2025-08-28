@@ -342,7 +342,6 @@ button>p{
     height: 80%;
     overflow: hidden;
     border-radius: 0%;
-    
 }
 
 /*المربعين (لماذا نحن)(خدماتنا)*/
@@ -494,9 +493,9 @@ button>p{
     background: #1e293b;
     text-align: center;
 }
-mark{
+#markone{
     background: none;
-    color: #000000;
+    color: #1e293b;
     font-family: "Beiruti", sans-serif;
     border-radius: 5px;
     text-decoration: underline;
@@ -945,10 +944,13 @@ li>a>p{
         height: 100%;
         padding: 15px;
         align-items: center;
+        background: rgb(255, 255, 255,0.4);
     }
     .up_div_for_rady_anser>h3{
         font-size: 1rem;
-
+        text-align: center;
+        width: 100%;
+        padding: 15px;
     }
     .up_div_for_rady_anser>p{
         width: 75%;
@@ -957,7 +959,8 @@ li>a>p{
         background: none;
     }
     .down_div_for_user_q{
-        background: none;
+        margin-bottom: 15px;
+        background: #1e293b;
         height: 50vh;
         padding: 0;
     }
@@ -975,16 +978,26 @@ li>a>p{
         color: whitesmoke;
     }
     .conect_with_us{
-        gap: 15px;
-        
+        gap: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
     .conect_ways{
-        padding:5px ;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        gap: 5px;
+        padding: 5px 10px;
         
     }
+    .conect_ways:hover{
+        translate: -2px 0px;
+    }
     .conect_ways>img{
-        width: 25px;
+        width: 25%;
     }
     .conect_ways>h5{
         font-size: 15px;
