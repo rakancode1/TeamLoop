@@ -183,7 +183,7 @@ button>p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("teamloopwebsite/img/taemloop.webp")no-repeat;
+    background: url("teamloopwebsite/img/photo_2025-08-18_01-59-45.jpg")no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -280,7 +280,7 @@ button>p{
     justify-content: space-around;
 }
 .for_phone_div{
-    height: 90vh;
+    height: fit-content;
     background: linear-gradient(to top , #adfd42,#10c710);
     width: 100%;
     display: flex;
@@ -289,6 +289,20 @@ button>p{
     flex-direction: column;
     padding: 0px;
     overflow: hidden;
+}
+#text{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    height: 100%;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text>h2{
+    text-align: center;
+    color: red;
 }
 .up_secten{
     width: 100%;
@@ -869,11 +883,16 @@ li>a>p{
 }
 @media (max-width:600px) {
     *{
-    a, button {
+    a {
     -webkit-tap-highlight-color: transparent;
     -webkit-focus-ring-color: transparent;
     outline: none;
     }
+    button{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-focus-ring-color: transparent;
+    outline: none;
+    } 
     }
     .option>nav {
      display: none;
@@ -941,6 +960,10 @@ li>a>p{
         font-size: 16px;
         color: whitesmoke;
     }
+    .scroll {
+    width:100%;
+    padding-bottom: 0px;
+    }
     #logodisegn{
         height: fit-content;
         padding: 15px;
@@ -969,28 +992,137 @@ li>a>p{
         flex-direction:column;
 
     }
+    
+    #logodisegn>.logos{
+        width: 95%;
+    }
+    .scroll>.logos>.item{
+        width: 100%;
+        flex-direction:row;
+        margin-bottom:3%;
+        border-bottom: 1px solid rgb(0, 0, 0,0.2);
+    }
+    .logos>.item>.logo{
+        border-radius: 0%;
+        height: 25vh;
+        width: 50%;
+        border: 0;
+    }
+    .logos>.item>.z{
+        background: url("img/logos/T-shirt_thread_Logo-removebg-preview.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: z 5s infinite step-start;
+    }
+    @keyframes z {
+        0%{
+            background: url("img/logos/T-shirt_thread_Logo-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background: url("img/logos/edit-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        50%{
+            background: url("img/logos/Branding__Logos___Design_Inspo_on_Instagram_-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        75%{
+            background: url("img/logos/ETF_Logo_Design__Inspiration_for_a_Unique_Identity__Modern_Elegance_and_Creative_Design-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        100%{
+            background: url("img/logos/T-shirt_thread_Logo-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+    .logos>.item>.zz{
+        background: url("teamloopwebsite/img/جمع-removebg-preview.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: zz 5.7s infinite step-start;
+    }
+    @keyframes zz {
+        0%{
+            background: url("teamloopwebsite/img/جمع-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background: url("teamloopwebsite/img/hhk.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        50%{
+            background: url("teamloopwebsite/img/شعار_الريادة_للنشر_الالكتروني-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        75%{
+            background: url("teamloopwebsite/img/__Hand_logo_by__kerovec_roko_Follow__logo_goals_-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        100%{
+            background: url("teamloopwebsite/img/جمع-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+    .logos>.item>.zzz{
+        
+        background:url("teamloopwebsite/img/زهرة_اللوتس_تصميم_شعار__شعار__زهرة__زهري_PNG_والمتجهات_للتحميل_مجانا-removebg-preview.png") no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: zzz 7s infinite step-start;
+    }
+    @keyframes zzz {
+        0%{
+            background: url("teamloopwebsite/img/زهرة_اللوتس_تصميم_شعار__شعار__زهرة__زهري_PNG_والمتجهات_للتحميل_مجانا-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        25%{
+            background: url("teamloopwebsite/img/__Hand_logo_by__kerovec_roko_Follow__logo_goals_-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        50%{
+            background: url("teamloopwebsite/img/70_Negative_space_logos_for_kiwi_designers_Inspira-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        75%{
+            background: url("teamloopwebsite/img/جمع-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        100%{
+            background: url("teamloopwebsite/img/زهرة_اللوتس_تصميم_شعار__شعار__زهرة__زهري_PNG_والمتجهات_للتحميل_مجانا-removebg-preview.png") no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+
     #graphicdisegn{
         height: fit-content;
         margin: 0;
         margin-bottom: 2px;   
     }
     #graphicdisegn>.scrolltext{
-        margin-bottom: 75px;
-    }
-    .scroll>.logos>.item{
-        width: 100%;
-        padding: 0%;
-        flex-direction:row;
-        gap: 15px;
-    }
-    .logos>.item>.logo{
-        border-radius: 0%;
-        background:rgba(255, 255, 255, 0.4);
-        width: 50%;
-        border: 0;
+        margin-bottom: 25px;
     }
     #questions_div{
-        background: linear-gradient(to bottom , #adfd42,#10c710);
+        background: linear-gradient(to top, rgb(255, 255, 255,0.1),#adfd42);
         justify-content: flex-start;
     }
     .up_div{
