@@ -619,7 +619,7 @@ button>p{
     height:fit-content;
     background: linear-gradient(to top , #adfd42,#10c710);
     gap: 5px;
-    padding-bottom: 50vh ;
+    padding-bottom: 25vh ;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1289,7 +1289,7 @@ li>a>p{
         
     }
     #email>a>.conect_ways>img{
-        width: 25%;
+        width: 15%;
     }
 
 
