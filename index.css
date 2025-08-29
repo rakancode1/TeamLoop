@@ -614,16 +614,22 @@ button>p{
 
 /* المربع الثالث في المنتصف*/
 #website{
+    width: 100%;
     width: fit-content;
     height:fit-content;
     background: linear-gradient(to top , #adfd42,#10c710);
-
+    gap: 5px;
+    padding-bottom: 50vh ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #website>.video{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 video{
     width: 98%;
@@ -650,7 +656,14 @@ video{
 .h3text>p{
     text-align: center;
 }
-
+#website>.img{
+    width: 98%;
+    height: fit-content;
+}
+#website>.img>img{
+    width:100%;
+    height: auto;
+}
 
 
 #questions_div{
@@ -901,7 +914,10 @@ li>a>p{
 }
 
 /*Resposiev diesgn */
-@media (min-width:600px) {
+@media (min-width:500px) {
+    *{
+        display: none;
+    }
     .menu-icon{
         display: none;
     }
@@ -917,7 +933,7 @@ li>a>p{
     
     
 }
-@media (max-width:600px) {
+@media (max-width:500px) {
     *{
     a {
     -webkit-tap-highlight-color: transparent;
@@ -1036,17 +1052,19 @@ li>a>p{
     
     #logodisegn>.logos{
         width: 95%;
+        
+ 
     }
     .scroll>.logos>.item{
         width: 100%;
         flex-direction:row;
-        margin-bottom:3%;
-        
+        padding: 0%;
+        justify-content: space-around;
     }
     .logos>.item>.logo{
         border-radius: 0%;
         height: 25vh;
-        width: 50%;
+        width: 40%;
         border: 0;
     }
     .logos>.item>.z{
@@ -1054,7 +1072,8 @@ li>a>p{
         background-position: center;
         background-size: cover;
         animation: z 7.5s infinite step-start;
-        border-bottom: 1px solid rgb(0, 0, 0,0.2);
+        border: 1px solid  rgb(0, 0, 0,0.1);
+        border-radius: 125px;
     }
     @keyframes z {
         0%{
@@ -1089,7 +1108,8 @@ li>a>p{
         background-position: center;
         background-size: cover;
         animation: zz 7.5s infinite step-start;
-        border-bottom: 1px solid rgb(0, 0, 0,0.2);
+        border: 1px solid  rgb(0, 0, 0,0.1);
+        border-radius: 125px;
     }
     @keyframes zz {
         0%{
@@ -1125,6 +1145,8 @@ li>a>p{
         background-position: center;
         background-size: cover;
         animation: zzz 7.5s infinite step-start;
+        border: 1px solid  rgb(0, 0, 0,0.1);
+        border-radius: 125px;
     }
     @keyframes zzz {
         0%{
